@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/DimaBialik/DanItEducation.git"
+    "url": "git+https://github.com/DimaBialik/stepProgect-2-Forkio.git"
   },
-  "author": "",
+  "author": "Dima Bialik, Anton Sadovnik",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/DimaBialik/DanItEducation/-/tree/main/HomeWorks/HTML%20CSS%20Advanced/Home%20Work%202"
+    "url": "https://gitlab.com/DimaBialik/stepProgect-2-Forkio"
   },
-  "homepage": "https://gitlab.com/DimaBialik/DanItEducation#readme",
+  "homepage": "https://gitlab.com/DimaBialik/stepProgect-2-Forkio#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",

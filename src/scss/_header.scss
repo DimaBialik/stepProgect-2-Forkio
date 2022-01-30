@@ -7,7 +7,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .header {
-  padding: 0 10px;
   width: 100%;
   min-width: 320px;
   height: 718px;
@@ -17,6 +16,7 @@ body {
 
   margin-bottom: 50px;
   &__nav {
+    padding: 0 10px;
     transition: 0.3s;
     height: 103px;
     align-items: center;
