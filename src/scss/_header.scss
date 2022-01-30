@@ -365,6 +365,7 @@ body {
       max-width: 1050px;
     }
     .header__nav-menu-burger {
+      width: 0;
       position: absolute;
       top: 53px;
       left: calc(100% / 2 - 180px);
