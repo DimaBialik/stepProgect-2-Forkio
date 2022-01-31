@@ -1,0 +1,12 @@
+@mixin marginTop($n) {
+    margin-top: $n;
+}
+@mixin marginBottom($n) {
+    margin-bottom: $n;
+}
+
+@mixin fontSize($fontSize, $lineHeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+  }
+  

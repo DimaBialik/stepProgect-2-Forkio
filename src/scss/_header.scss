@@ -3,24 +3,25 @@
 body {
   min-width: 320px;
 
-  width: 100%;
+
   font-family: "Montserrat", sans-serif;
 }
 .header {
-  width: 100%;
-  min-width: 320px;
+    
+
+ 
   height: 718px;
   background: url(./images/header/bg-header.png) no-repeat;
   background-size: cover;
   background-position: center center;
+  @include marginBottom(50px);
 
-  margin-bottom: 50px;
   &__nav {
-    padding: 0 10px;
+   
     transition: 0.3s;
     height: 103px;
     align-items: center;
-    background-color: #27262a;
+    background-color: $backgroundBlack;
     display: flex;
     padding: 0 16px 0 16px;
     justify-content: space-between;
@@ -45,17 +46,17 @@ body {
       cursor: pointer;
       font-style: normal;
       font-weight: bold;
-      font-size: 15px;
-      line-height: 15px;
-      color: white;
+      @include fontSize(15px,15px);
+    
+      color: $textColorWhite;
       border: none;
       width: 119px;
       height: 37px;
-      background: #8d81ac;
+      background: $backgroundPurple;
       border-radius: 40px;
       &:hover {
-        background: white;
-        color: #8d81ac;
+        background: $backgroundWhite;
+        color: $textColorPurple;
       }
     }
     &-menu {
@@ -71,7 +72,7 @@ body {
         &-burger {
           width: 30px;
           height: 3px;
-          background: white;
+          background: $backgroundWhite;
           border-radius: 1px;
           transition: all 0.2s ease-in-out;
           &::before,
@@ -80,7 +81,7 @@ body {
             position: absolute;
             width: 30px;
             height: 3px;
-            background: white;
+            background: $backgroundWhite;
             border-radius: 1px;
             transition: all 0.2s ease-in-out;
           }
@@ -101,12 +102,12 @@ body {
             right: 0;
             width: 30px;
             transform: rotate(45deg) translate(35px, -35px);
-            background: white;
+            background: $backgroundWhite;
           }
           &::after {
             width: 30px;
             transform: rotate(-45deg) translate(35px, 35px);
-            background: white;
+            background: $backgroundWhite;
           }
         }
       }
@@ -117,15 +118,13 @@ body {
         left: 4%;
         top: 103px;
         width: 92%;
-        background: #333333;
+        background: $backgroundBurger;
         &.open {
           display: block;
           ul {
             height: 380px;
-
             display: flex;
             flex-direction: column;
-
             li {
               display: flex;
               height: 88px;
@@ -137,17 +136,17 @@ body {
             a {
               font-style: normal;
               font-weight: normal;
-              font-size: 26px;
-              line-height: 26px;
+              @include fontSize(26px,26px);
+          
               display: flex;
 
               align-items: center;
               padding-left: 35px;
-              color: white;
+              color: $textColorWhite;
               &:hover {
                 height: 53px;
-                border-left: 8px solid #8d81ac;
-                color: #8d81ac;
+                border-left: 8px solid $backgroundPurple;
+                color: $textColorPurple;
               }
             }
           }
@@ -162,40 +161,44 @@ body {
     align-items: center;
     h1 {
       transition: 0.3s;
-      margin-top: 50px;
+      @include marginTop(50px);
+ 
       font-style: normal;
       font-weight: bold;
-      font-size: 48px;
-      line-height: 48px;
-      color: white;
+      @include fontSize(48px,48px);
+
+      color: $textColorWhite;
     }
     p {
       transition: 0.3s;
-      margin-top: 18px;
+      @include marginTop(18px);
+
       width: 80%;
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
-      line-height: 24px;
+      @include fontSize(18px,24px);
+
       align-items: center;
       text-align: center;
-      color: #8d81ac;
+      color: $textColorPurple;
     }
     p:last-child {
       transition: 0.3s;
-      margin-top: 14px;
+      @include marginTop(14px);
+  
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 14px;
+      @include fontSize (14px,14px);
+  
       align-items: center;
       text-align: center;
       text-transform: uppercase;
-      color: #848e97;
+      color: $textColorGray;
     }
   }
   &__button {
-    margin-top: 400px;
+    @include marginTop(400px);
+
     display: flex;
     flex-direction: column;
 
@@ -207,32 +210,33 @@ body {
       height: 45px;
       border: none;
 
-      background: #8d81ac;
+      background: $textColorPurple;
       border-radius: 40px;
 
       font-style: normal;
       font-weight: bold;
-      font-size: 18px;
-      line-height: 20px;
+      @include fontSize(18px,20px);
+   
       align-items: center;
       text-align: center;
 
       color: #ffffff;
       &:hover {
-        color: #8d81ac;
+        color: $textColorPurple ;
         background: white;
-        border: 1px solid #8d81ac;
+        border: 1px solid $textColorPurple;
       }
     }
     p {
-      margin-top: 12.5px;
+      @include marginTop(12.5px);
+     
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 14px;
+      @include fontSize(14px,14px);
+    
       align-items: center;
       text-align: center;
-      color: #848e97;
+      color: $textColorGray;
     }
   }
 }
@@ -241,7 +245,6 @@ body {
   .header {
     height: 800px;
 
-    margin-bottom: 50px;
     &__nav {
       height: 118px;
 
@@ -256,18 +259,18 @@ body {
         align-items: flex-end;
         h1 {
           display: block;
-          margin-bottom: 7px;
-          margin-left: 17px;
+          margin: 0 0 7px 17px;
+       
           font-family: "Lato", sans-serif;
           font-style: normal;
           font-weight: bold;
-          font-size: 24px;
-          line-height: 16px;
+          @include fontSize(24px,16px);
+     
           align-items: center;
           text-transform: uppercase;
-          color: #8d81ac;
+          color: $textColorPurple;
           &:hover {
-            color: white;
+            color: $textColorWhite;
           }
         }
       }
@@ -277,8 +280,8 @@ body {
         justify-content: flex-end;
         button {
           transition: 0.3s;
-          font-size: 16px;
-          line-height: 16px;
+          @include fontSize(16px,16px);
+
 
           width: 145px;
           height: 38px;
@@ -303,12 +306,12 @@ body {
               border: none;
               a {
                 font-weight: bold;
-                font-size: 16px;
-                line-height: 18px;
+                @include fontSize(16px,16px);
+           
 
-                color: #8d81ac;
+                color: $textColorPurple;
                 &:hover {
-                  color: #ffffff;
+                  color: $textColorWhite;
                 }
               }
             }
@@ -319,24 +322,26 @@ body {
 
     &__description {
       h1 {
-        margin-top: 68px;
-
-        font-size: 72px;
-        line-height: 72px;
+     
+        @include marginTop(68px);
+        @include fontSize(72px,72px);
+     
       }
       p {
-        margin-top: 19px;
+        @include marginTop(19px);
+       
         width: 80%;
-
-        font-size: 24px;
-        line-height: 24px;
+        @include fontSize(24px,24px);
+  
       }
       p:last-child {
-        margin-top: 19px;
+        @include marginTop(19px);
+      
       }
     }
     &__button {
-      margin-top: 0;
+      @include marginTop(0);
+     
       position: absolute;
       top: 767px;
       left: calc(100% / 2 - 180px);
@@ -347,9 +352,8 @@ body {
       button {
         width: 390px;
         height: 62px;
-
-        font-size: 21px;
-        line-height: 23px;
+        @include fontSize(21px,23px);
+  
       }
       p {
         line-height: 16px;
@@ -362,7 +366,7 @@ body {
     &__nav {
       background: none;
       margin: 0 auto;
-      max-width: 1050px;
+      max-width: 1200px;
     }
     .header__nav-menu-burger {
       width: 0;
@@ -375,22 +379,22 @@ body {
     }
     &__description {
       h1 {
-        margin-top: 50px;
 
-        font-size: 82px;
-        line-height: 82px;
+        @include marginTop(50px);
+        @include fontSize(82px,82px);
+
       }
       p {
-        margin-top: 19px;
-
-        font-size: 30px;
-        line-height: 30px;
+      
+        @include marginTop(19px);
+        @include fontSize(30px,30px);
+    
       }
       p:last-child {
-        margin-top: 19px;
-
-        font-size: 16px;
-        line-height: 16px;
+  
+        @include marginTop(19px);
+        @include fontSize(16px,16px);
+   ;
       }
     }
   }
