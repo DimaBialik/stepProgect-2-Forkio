@@ -1,31 +1,32 @@
 @import "_constants.scss";
 @import "_mixins.scss";
-.section__comments {
+.section-comments {
   background-image: url(./images/comments/bg-comments.png);
   background-position-x: center;
   background-size: cover;
   color: $textColorWhite;
   padding: 0 10px 0 10px;
-  &-container {
+  &__container {
     margin: 0 auto;
     max-width: 1200px;
 
   
   }
 
-  &-title {
+  &__title {
     padding: 53px 0;
     font-style: normal;
     font-weight: bold;
-    // font-size: 36px;
-    // line-height: 48px;
+   
     @include fontSize(36px,48px);
     align-items: center;
     text-align: center;
   }
 
-  &-post {
+  &__content { 
+    &-post {
     text-align: center;
+    
     p {
       padding: 33px 0 45px 0;
       font-family: "Lato", sans-serif;
@@ -35,9 +36,11 @@
       line-height: 24px;
       align-items: center;
       text-align: center;
-      // margin-bottom: 37px;
+      
     }
   }
+  }
+  
 
   &-details {
     color: $textColorPurple;
@@ -57,43 +60,47 @@
 }
 
 @media screen and (min-width: 481px) {
-  .section__comments {
-    &-title {
+  .section-comments {
+    &__title {
       padding: 83px 0;
       @include fontSize(42px,44px);
-      // font-size: 42px;
+      
     }
 
-    &-content {
+    &__content {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       align-content: center;
-    }
-
-    &-post {
-      width: 40%;
-      align-self: center;
-      p{ 
-        padding: 33px 0 58px 0;
+      &-post {
+        width: 40%;
+        align-self: center;
+        p{ 
+          padding: 33px 0 58px 0;
+        }
       }
     }
+
+   
   }
 }
 
 @media screen and (min-width: 992px) {
-  .section__comments {
-    &-title {
+  .section-comments {
+    &__title {
       padding: 108px 0 81px;
       @include fontSize(48px,50px);
-      // font-size: 48px;
+     
     }
 
-    &-post {
-      width: 30%;
-      p{ 
-        padding: 33px 0 116px 0;
+    &__content { 
+      &-post {
+        width: 30%;
+        p{ 
+          padding: 33px 0 116px 0;
+        }
       }
     }
+    
   }
 }
