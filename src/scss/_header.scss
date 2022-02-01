@@ -3,32 +3,23 @@
 body {
   min-width: 320px;
 
-
   font-family: "Montserrat", sans-serif;
 }
 .header {
-    
-
- 
   height: 718px;
+  // padding: 0 10px 0 10px;
   background: url(./images/header/bg-header.png) no-repeat;
   background-size: cover;
   background-position: center center;
-  @include marginBottom(50px);
-
-  &__nav {
-   
-    transition: 0.3s;
-    height: 103px;
+    &__nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: $backgroundBlack;
-    display: flex;
-    padding: 0 16px 0 16px;
-    justify-content: space-between;
-
-    &-logo {
-      display: flex;
-      .logo {
+    padding: 25px 16px 25px 16px;
+     &-logo {
+      display: flex; 
+      &-img {
         cursor: pointer;
         background-image: url(./images/header/Logo.png);
         width: 43px;
@@ -37,26 +28,24 @@ body {
           background-image: url(./images/header/logo-hover.png);
         }
       }
-      h1 {
-        cursor: pointer;
+      h2 {
         display: none;
-      }
+        cursor: pointer;
+              }
     }
     button {
-      cursor: pointer;
-      font-style: normal;
-      font-weight: bold;
-      @include fontSize(15px,15px);
-    
-      color: $textColorWhite;
-      border: none;
       width: 119px;
       height: 37px;
+      font-weight: bold;
+      @include fontSize(15px,15px);
+      color: $textColorWhite;
       background: $backgroundPurple;
+      border: none;
       border-radius: 40px;
-      &:hover {
-        background: $backgroundWhite;
-        color: $textColorPurple;
+      cursor: pointer;
+        &:hover {
+          background: $backgroundWhite;
+          color: $textColorPurple;
       }
     }
     &-menu {
@@ -73,7 +62,6 @@ body {
           width: 30px;
           height: 3px;
           background: $backgroundWhite;
-          border-radius: 1px;
           transition: all 0.2s ease-in-out;
           &::before,
           &::after {
@@ -82,7 +70,6 @@ body {
             width: 30px;
             height: 3px;
             background: $backgroundWhite;
-            border-radius: 1px;
             transition: all 0.2s ease-in-out;
           }
           &::before {
@@ -112,19 +99,21 @@ body {
         }
       }
       &-burger {
-        transition: 0.3s;
+       
         position: absolute;
         display: none;
         left: 4%;
-        top: 103px;
+        top: 95px;
         width: 92%;
         background: $backgroundBurger;
         &.open {
           display: block;
           ul {
-            height: 380px;
+            
             display: flex;
             flex-direction: column;
+            // @include paddingBottom(20px);
+            padding-bottom: 20px;
             li {
               display: flex;
               height: 88px;
@@ -134,16 +123,14 @@ body {
             }
 
             a {
-              font-style: normal;
-              font-weight: normal;
-              @include fontSize(26px,26px);
-          
               display: flex;
-
               align-items: center;
-              padding-left: 35px;
+              @include fontSize(26px,26px);
               color: $textColorWhite;
-              &:hover {
+               padding-left: 35px;
+              
+              &:active,
+              &:focus {
                 height: 53px;
                 border-left: 8px solid $backgroundPurple;
                 color: $textColorPurple;
@@ -161,79 +148,67 @@ body {
     align-items: center;
     h1 {
       transition: 0.3s;
-      @include marginTop(50px);
+      
+      padding-top: 50px;
  
-      font-style: normal;
+      
       font-weight: bold;
       @include fontSize(48px,48px);
-
       color: $textColorWhite;
     }
     p {
       transition: 0.3s;
-      @include marginTop(18px);
-
       width: 80%;
-      font-style: normal;
-      font-weight: normal;
+      padding-top: 18px;
+     
       @include fontSize(18px,24px);
-
       align-items: center;
       text-align: center;
       color: $textColorPurple;
     }
     p:last-child {
       transition: 0.3s;
-      @include marginTop(14px);
-  
-      font-style: normal;
-      font-weight: normal;
+      padding-top: 14px;
+    
       @include fontSize (14px,14px);
-  
+      color: $textColorGray;
       align-items: center;
       text-align: center;
       text-transform: uppercase;
-      color: $textColorGray;
+      
     }
   }
   &__button {
-    @include marginTop(400px);
-
     display: flex;
     flex-direction: column;
-
     align-items: center;
+    padding-top: 400px;
+    
     button {
       cursor: pointer;
-      transition: 0.3s;
+      
       width: 290px;
       height: 45px;
-      border: none;
 
-      background: $textColorPurple;
-      border-radius: 40px;
-
-      font-style: normal;
+      @include fontSize(18px,20px); 
       font-weight: bold;
-      @include fontSize(18px,20px);
-   
+      color: $textColorWhite;
+      background: $backgroundPurple;
       align-items: center;
       text-align: center;
+      border: none;
+      border-radius: 40px;
 
-      color: #ffffff;
       &:hover {
         color: $textColorPurple ;
-        background: white;
+        background: $backgroundWhite ;
         border: 1px solid $textColorPurple;
       }
     }
     p {
-      @include marginTop(12.5px);
-     
-      font-style: normal;
-      font-weight: normal;
+      padding-top: 12.5px;
+      
       @include fontSize(14px,14px);
-    
       align-items: center;
       text-align: center;
       color: $textColorGray;
@@ -246,26 +221,21 @@ body {
     height: 800px;
 
     &__nav {
-      height: 118px;
-
       flex-wrap: wrap;
-      padding: 0 20px 0 20px;
       justify-content: center;
-
+      padding: 25px 20px 25px 20px;
+      
       &-logo {
         width: 50%;
-
         justify-content: flex-start;
         align-items: flex-end;
-        h1 {
+        h2 {
           display: block;
           margin: 0 0 7px 17px;
        
           font-family: "Lato", sans-serif;
-          font-style: normal;
           font-weight: bold;
           @include fontSize(24px,16px);
-     
           align-items: center;
           text-transform: uppercase;
           color: $textColorPurple;
@@ -289,19 +259,20 @@ body {
       }
 
       &-menu {
+        padding-top: 18px;
         &-btn {
           display: none;
         }
         &-burger {
+          position: relative;
           left: 0;
           top: 0;
-          position: relative;
           display: block;
           background: none;
           ul {
-            width: 490px;
             display: flex;
             justify-content: space-around;
+            width: 490px;
             li {
               border: none;
               a {
@@ -322,32 +293,34 @@ body {
 
     &__description {
       h1 {
-     
-        @include marginTop(68px);
+        
         @include fontSize(72px,72px);
      
       }
       p {
-        @include marginTop(19px);
+        padding-top: 19px;
+        
        
         width: 80%;
         @include fontSize(24px,24px);
   
       }
       p:last-child {
-        @include marginTop(19px);
+        padding-top: 19px;
+        
       
       }
     }
     &__button {
-      @include marginTop(0);
+      padding-top: 0;
+      
      
       position: absolute;
       top: 767px;
       left: calc(100% / 2 - 180px);
+
       display: flex;
       flex-direction: column;
-
       align-items: center;
       button {
         width: 390px;
@@ -366,35 +339,31 @@ body {
     &__nav {
       background: none;
       margin: 0 auto;
-      max-width: 1200px;
-    }
-    .header__nav-menu-burger {
-      width: 0;
-      position: absolute;
-      top: 53px;
-      left: calc(100% / 2 - 180px);
-      ul {
-        justify-content: space-between;
+      max-width: 1160px;
+      &-menu-burger {
+        width: 0;
+        position: absolute;
+        top: 40px;
+        left: calc(100% / 2 - 180px);
+        ul {
+          justify-content: space-between;
+        }
       }
     }
+    
     &__description {
       h1 {
-
-        @include marginTop(50px);
+        
         @include fontSize(82px,82px);
-
       }
       p {
-      
-        @include marginTop(19px);
+        
         @include fontSize(30px,30px);
-    
-      }
-      p:last-child {
-  
-        @include marginTop(19px);
+        }
+      p:last-child {   
+        
         @include fontSize(16px,16px);
-   ;
+   
       }
     }
   }

@@ -1,13 +1,13 @@
-.section__present {
+.section-present {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 10px 0 10px;
 
-  h1 {
+  h2 {
     transition: 0.3s;
     margin: 0 auto;
     width: 273px;
-    margin-top: 130px;
+    padding-top: 130px;
 
     font-weight: bold;
     font-size: 26px;
@@ -21,7 +21,7 @@
     transition: 0.3s;
     margin: 0 auto;
     width: 276px;
-    margin-top: 27px;
+    padding-top: 27px;
     font-family: "Lato", sans-serif;
  
     font-size: 14px;
@@ -31,10 +31,10 @@
 
     color: #323232;
   }
-  .section__present-buttons {
+  &__buttons {
     margin: 0 auto;
     width: 276px;
-    margin-top: 36px;
+    padding-top: 36px;
     justify-content: space-around;
     align-items: center;
     display: flex;
@@ -47,51 +47,52 @@
       &:last-child {
         margin-top: 20px;
       }
-      .Link--muted {
-        text-decoration: none;
-        display: flex;
-        padding: 3px 6px 3px 6px;
-        border-right: 1px solid rgba(27, 31, 35, 0.2);
-        color: #24292e;
-        background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
-        font-family: "Lato", sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-        align-items: center;
-        text-align: center;
-        svg {
-          margin-right: 5px;
-        }
-      }
+     
       a:last-child {
         padding: 3px 6px 3px 6px;
         color: #24292e;
 
         font-family: "Lato", sans-serif;
-               font-size: 14px;
+         font-size: 14px;
         line-height: 20px;
         align-items: center;
         text-align: center;
+      }
+    }
+    &-item{
+      text-decoration: none;
+      display: flex;
+      padding: 3px 6px 3px 6px;
+      border-right: 1px solid rgba(27, 31, 35, 0.2);
+      color: #24292e;
+      background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+      font-family: "Lato", sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      align-items: center;
+      text-align: center;
+      svg {
+        margin-right: 5px;
       }
     }
   }
 }
 
 @media screen and (min-width: 481px) {
-  .section__present {
-    h1 {
+  .section-present {
+    h2 {
       width: 90%;
-      margin-top: 158px;
+      padding-top: 158px;
       font-size: 42px;
       line-height: 42px;
     }
     p {
       width: 90%;
-      margin-top: 33px;
+      padding-top: 33px;
       font-size: 21px;
       line-height: 32px;
     }
-    .section__present-buttons {
+    &__buttons {
       width: 450px;
       div {
         &:last-child {
@@ -103,26 +104,26 @@
 }
 
 @media screen and (min-width: 992px) {
-  .section__present {
+  .section-present {
     h1 {
       width: 758.89px;
-      margin-top: 158px;
+      padding-top: 158px;
       font-size: 54px;
       line-height: 54px;
     }
     p {
       width: 861px;
-      margin-top: 33px;
+      padding-top: 33px;
       font-size: 21px;
       line-height: 32px;
     }
-    .section__present-buttons {
+    &__buttons {
       width: 450px;
-      div {
-        &:last-child {
-          margin-top: 0;
-        }
-      }
+      // div {
+      //   &:last-child {
+      //     padding-top: 0;
+      //   }
+      // }
     }
   }
 }
