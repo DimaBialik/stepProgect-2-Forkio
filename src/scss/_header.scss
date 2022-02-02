@@ -206,7 +206,7 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media  (min-width: 481px) {
   .header {
     height: 800px;
     &__nav {
@@ -305,7 +305,7 @@
     }
   }
 }
-@media screen and (min-width: 992px) {
+@media  (min-width: 992px) {
   .header {
     &__nav {
       background: none;
