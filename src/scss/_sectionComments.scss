@@ -4,20 +4,14 @@
   background-image: url(./images/comments/bg-comments.png);
   background-position-x: center;
   background-size: cover;
-  color: $textColorWhite;
-  padding: 0 10px 0 10px;
-  &__container {
-    margin: 0 auto;
-    max-width: 1200px;
-
+  min-width: 320px;
   
-  }
-
+ 
   &__title {
     padding: 53px 0;
     font-style: normal;
     font-weight: bold;
-   
+    color: $textColorWhite;
     @include fontSize(36px,48px);
     align-items: center;
     text-align: center;
@@ -27,25 +21,26 @@
     &-post {
     text-align: center;
     
-    p {
-      padding: 33px 0 45px 0;
-      font-family: "Lato", sans-serif;
-      font-style: italic;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 24px;
-      align-items: center;
-      text-align: center;
-      
+      p {
+        padding: 33px 0 45px 0;
+        font-family: "Lato", sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        color: $textColorWhite;
+        @include fontSize(16px,24px);
+        
+        align-items: center;
+        text-align: center;
+        
+      }
     }
-  }
   }
   
 
   &-details {
-    color: $textColorPurple;
+    color: #A291A5;
     @include fontSize(14px,21px);
-    font-family:  'Lato',sans-serif;
+    width: 90%;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
@@ -53,7 +48,7 @@
       content: "";
       display: block;
       height: 1px;
-      background: $backgroundPurple;
+      background:  #645766;;
       margin-top: 20px;
     }
   }
