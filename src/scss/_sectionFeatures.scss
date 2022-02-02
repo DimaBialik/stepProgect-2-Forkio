@@ -4,10 +4,9 @@
         padding: 120px 0 6px;
     }
     &__title {
+        @include fontSize(32px, 38px);
         font-weight: bold;
-        font-size: 32px;
-        line-height: 38px;
-        color: #8d81ac;
+        color: $textColorPurple;
     }
     &__image {
         display: flex;
@@ -21,16 +20,14 @@
         .features {
             margin-bottom: 42px;
             &__title {
-                font-size: 16px;
-                line-height: 16px;
+                @include fontSize(16px, 16px);
                 color: #323232;
                 margin: 27px 0 14px;
             }
             &__subtitle {
+                @include fontSize(14px, 21px);
                 font-family: "Montserrat";
-                font-size: 14px;
-                line-height: 21px;
-                color: #848e97;
+                color: $textColorGray;
             }
         }
     }
@@ -42,8 +39,7 @@
             text-align: left;
         }
         &__title {
-            font-size: 42px;
-            line-height: 44px;
+            @include fontSize(42px, 44px);
             text-align: center;
         }
         &__content-wrapper {
