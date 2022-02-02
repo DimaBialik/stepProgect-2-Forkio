@@ -1,16 +1,15 @@
 @import "_constants.scss";
 @import "_mixins.scss";
-body {
-  min-width: 320px;
 
-  font-family: "Montserrat", sans-serif;
-}
 .header {
   height: 718px;
-  // padding: 0 10px 0 10px;
   background: url(./images/header/bg-header.png) no-repeat;
   background-size: cover;
   background-position: center center;
+  min-width: 320px;
+  .container {
+    padding: 0;
+  }
     &__nav {
     display: flex;
     justify-content: space-between;
@@ -28,12 +27,12 @@ body {
           background-image: url(./images/header/logo-hover.png);
         }
       }
-      h2 {
+      p {
         display: none;
         cursor: pointer;
               }
-    }
-    button {
+      }
+      button {
       width: 119px;
       height: 37px;
       font-weight: bold;
@@ -47,9 +46,9 @@ body {
           background: $backgroundWhite;
           color: $textColorPurple;
       }
-    }
-    &-menu {
-      &-btn {
+      }
+      &-menu {
+        &-btn {
         width: 45px;
         height: 45px;
         position: relative;
@@ -93,7 +92,7 @@ body {
           }
           &::after {
             width: 30px;
-            transform: rotate(-45deg) translate(35px, 35px);
+            transform: rotate(-45deg) translate(32px, 32px);
             background: $backgroundWhite;
           }
         }
@@ -112,7 +111,6 @@ body {
             
             display: flex;
             flex-direction: column;
-            // @include paddingBottom(20px);
             padding-bottom: 20px;
             li {
               display: flex;
@@ -127,8 +125,7 @@ body {
               align-items: center;
               @include fontSize(26px,26px);
               color: $textColorWhite;
-               padding-left: 35px;
-              
+              padding-left: 35px;
               &:active,
               &:focus {
                 height: 53px;
@@ -148,10 +145,7 @@ body {
     align-items: center;
     h1 {
       transition: 0.3s;
-      
       padding-top: 50px;
- 
-      
       font-weight: bold;
       @include fontSize(48px,48px);
       color: $textColorWhite;
@@ -166,7 +160,7 @@ body {
       text-align: center;
       color: $textColorPurple;
     }
-    p:last-child {
+    h3 {
       transition: 0.3s;
       padding-top: 14px;
     
@@ -183,13 +177,10 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 400px;
-    
     button {
       cursor: pointer;
-      
       width: 290px;
       height: 45px;
-
       @include fontSize(18px,20px); 
       font-weight: bold;
       color: $textColorWhite;
@@ -198,14 +189,13 @@ body {
       text-align: center;
       border: none;
       border-radius: 40px;
-
       &:hover {
         color: $textColorPurple ;
         background: $backgroundWhite ;
         border: 1px solid $textColorPurple;
       }
     }
-    p {
+    h3 {
       padding-top: 12.5px;
       
       @include fontSize(14px,14px);
@@ -216,24 +206,20 @@ body {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media  (min-width: 481px) {
   .header {
     height: 800px;
-
     &__nav {
       flex-wrap: wrap;
       justify-content: center;
       padding: 25px 20px 25px 20px;
-      
       &-logo {
         width: 50%;
         justify-content: flex-start;
         align-items: flex-end;
-        h2 {
+        p {
           display: block;
-          margin: 0 0 7px 17px;
-       
-          font-family: "Lato", sans-serif;
+          padding: 0 0 7px 17px;
           font-weight: bold;
           @include fontSize(24px,16px);
           align-items: center;
@@ -249,15 +235,11 @@ body {
         display: flex;
         justify-content: flex-end;
         button {
-          transition: 0.3s;
           @include fontSize(16px,16px);
-
-
           width: 145px;
           height: 38px;
         }
       }
-
       &-menu {
         padding-top: 18px;
         &-btn {
@@ -278,8 +260,6 @@ body {
               a {
                 font-weight: bold;
                 @include fontSize(16px,16px);
-           
-
                 color: $textColorPurple;
                 &:hover {
                   color: $textColorWhite;
@@ -293,32 +273,23 @@ body {
 
     &__description {
       h1 {
-        
         @include fontSize(72px,72px);
-     
       }
       p {
         padding-top: 19px;
-        
-       
         width: 80%;
         @include fontSize(24px,24px);
-  
       }
-      p:last-child {
+      h3 {
         padding-top: 19px;
-        
-      
+        @include fontSize(14px,14px);
       }
     }
     &__button {
       padding-top: 0;
-      
-     
       position: absolute;
       top: 767px;
       left: calc(100% / 2 - 180px);
-
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -326,21 +297,19 @@ body {
         width: 390px;
         height: 62px;
         @include fontSize(21px,23px);
-  
       }
-      p {
+      h3 {
+        padding-top: 42px;
         line-height: 16px;
       }
     }
   }
 }
-@media screen and (min-width: 992px) {
+@media  (min-width: 992px) {
   .header {
     &__nav {
       background: none;
-      margin: 0 auto;
-      max-width: 1160px;
-      &-menu-burger {
+        &-menu-burger {
         width: 0;
         position: absolute;
         top: 40px;
@@ -350,20 +319,15 @@ body {
         }
       }
     }
-    
     &__description {
       h1 {
-        
         @include fontSize(82px,82px);
       }
       p {
-        
         @include fontSize(30px,30px);
         }
-      p:last-child {   
-        
+      h3{   
         @include fontSize(16px,16px);
-   
       }
     }
   }

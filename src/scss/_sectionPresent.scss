@@ -1,34 +1,26 @@
 .section-present {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 10px 0 10px;
+
+  
 
   h2 {
-    transition: 0.3s;
     margin: 0 auto;
     width: 273px;
     padding-top: 130px;
-
     font-weight: bold;
-    font-size: 26px;
-    line-height: 28px;
-    align-items: center;
+    @include fontSize(26px,28px);
+     
     text-align: center;
     text-transform: uppercase;
     color: #635c73;
   }
   p {
     transition: 0.3s;
-    margin: 0 auto;
+   margin: 0 auto;
     width: 276px;
     padding-top: 27px;
-    font-family: "Lato", sans-serif;
- 
-    font-size: 14px;
-    line-height: 20px;
-    align-items: center;
+    @include fontSize(14px,20px);
+  
     text-align: center;
-
     color: #323232;
   }
   &__buttons {
@@ -51,10 +43,8 @@
       a:last-child {
         padding: 3px 6px 3px 6px;
         color: #24292e;
-
         font-family: "Lato", sans-serif;
-         font-size: 14px;
-        line-height: 20px;
+        @include fontSize(14px,20px);
         align-items: center;
         text-align: center;
       }
@@ -67,8 +57,7 @@
       color: #24292e;
       background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
       font-family: "Lato", sans-serif;
-      font-size: 14px;
-      line-height: 20px;
+      @include fontSize(14px,20px);
       align-items: center;
       text-align: center;
       svg {
@@ -78,19 +67,19 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media (min-width: 481px) {
   .section-present {
     h2 {
       width: 90%;
       padding-top: 158px;
-      font-size: 42px;
-      line-height: 42px;
+      @include fontSize(42px,42px);
+     
     }
     p {
       width: 90%;
       padding-top: 33px;
-      font-size: 21px;
-      line-height: 32px;
+      @include fontSize(21px,32px);
+     
     }
     &__buttons {
       width: 450px;
@@ -103,27 +92,19 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .section-present {
     h1 {
       width: 758.89px;
       padding-top: 158px;
-      font-size: 54px;
-      line-height: 54px;
+      @include fontSize(54px,54px);
+     
     }
     p {
-      width: 861px;
-      padding-top: 33px;
-      font-size: 21px;
-      line-height: 32px;
+      width: 800px;
     }
     &__buttons {
-      width: 450px;
-      // div {
-      //   &:last-child {
-      //     padding-top: 0;
-      //   }
-      // }
+     padding-bottom: 70px;
     }
   }
 }

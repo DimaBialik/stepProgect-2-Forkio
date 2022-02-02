@@ -14,13 +14,16 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a,
+button {
     font-family: "Montserrat";
 }
 p {
     font-family: "Lato";
 }
 .container {
+    min-width: 320px;
     max-width: 1200px;
     padding-left: 10px;
     padding-right: 10px;
