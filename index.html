@@ -1,277 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Step Project "Forkio"</title>
+        <link rel="stylesheet" href="./dist/styles.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Step Project "Forkio"</title>
-    <link rel="stylesheet" href="./dist/styles.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-</head>
+    <body>
+        <header class="header">
+            <div class="header__content-wrapper container">
+                <nav class="header__nav">
+                    <div class="header__nav-logo">
+                        <a href="#">
+                            <div class="header__nav-logo-img"></div
+                        ></a>
+                        <a href="#"><h2>ForkIO</h2></a>
+                    </div>
+                    <div class="header__nav-button">
+                        <button>Buy Now</button>
+                    </div>
 
-<body>
-    <header class="header">
-        <nav class="header__nav">
-            <div class="header__nav-logo">
-                <a href="#">  <div class="header__nav-logo-img"></div></a>
-                <a href="#"><h2>ForkIO</h2></a>
-              
-                
-            </div>
-            <div class="header__nav-button"><button>Buy Now</button></div>
-
-            <div class="header__nav-menu">
-                <div class="header__nav-menu-btn">
-                    <div class="header__nav-menu-btn-burger"></div>
-
+                    <div class="header__nav-menu">
+                        <div class="header__nav-menu-btn">
+                            <div class="header__nav-menu-btn-burger"></div>
+                        </div>
+                        <div class="header__nav-menu-burger">
+                            <ul class="header__nav-menu-list">
+                                <li><a href="#">Overview</a></li>
+                                <li><a href="#">About Fork</a></li>
+                                <li><a href="#">Buying Options</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header__description">
+                    <h1>Fork App</h1>
+                    <p>A Real Gamechanger In The World Of Web-Development</p>
+                    <p>v. 2.8 For Mac and Windows</p>
                 </div>
-                <div class="header__nav-menu-burger">
-                    <ul class="header__nav-menu-list">
-                        <li><a href="#">Overview</a> </li>
-                        <li><a href="#">About Fork</a> </li>
-                        <li><a href="#">Buying Options</a> </li>
-                        <li><a href="#">Support</a> </li>
-                    </ul>
+                <div class="header__button">
+                    <button>Download For Free Now</button>
+                    <p>Unlimited 30-Days Trial Period</p>
                 </div>
             </div>
-        </nav>
-        <div class="header__description">
-            <h1>Fork App</h1>
-            <p>A Real Gamechanger In The World Of Web-Development</p>
-            <p>v. 2.8 For Mac and Windows</p>
-        </div>
-        <div class="header__button">
-            <button>Download For Free Now</button>
-            <p>Unlimited 30-Days Trial Period</p>
-        </div>
+        </header>
+        <section class="section-present container">
+            <h2>Revolutionary editor</h2>
+            <p>
+                Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
+                laoreet vulputate dignissim. Sed id metus id quam auctor
+                molestie eget ut augue.
+            </p>
+            <div class="section-present__buttons">
+                <div>
+                    <a href="#" class="section-present__buttons-item">
+                        <svg
+                            aria-hidden="true"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            version="1.1"
+                            width="16"
+                            data-view-component="true"
+                            class="octicon octicon-eye mr-2"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"
+                            ></path>
+                        </svg>
 
-    </header>
-    <section class="section-present">
-        <h2>Revolutionary editor</h2>
-        <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id
-            quam auctor molestie eget ut augue. </p>
-        <div class="section-present__buttons">
-            <div>
-                <a href="#" class="section-present__buttons-item">
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                        data-view-component="true" class="octicon octicon-eye mr-2">
-                        <path fill-rule="evenodd"
-                            d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z">
-                        </path>
-                    </svg>
+                        Watching
+                    </a>
+                    <a href="#">1,397</a>
+                </div>
+                <div>
+                    <a href="#" class="section-present__buttons-item">
+                        <svg
+                            aria-hidden="true"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            version="1.1"
+                            width="16"
+                            data-view-component="true"
+                            class="octicon octicon-star mr-2"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"
+                            ></path>
+                        </svg>
 
-                    Watching
-                </a>
-                <a href="#">1,397</a>
+                        Stars
+                    </a>
+                    <a href="#">21,038</a>
+                </div>
+                <div>
+                    <a href="#" class="section-present__buttons-item">
+                        <svg
+                            aria-hidden="true"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            version="1.1"
+                            width="16"
+                            data-view-component="true"
+                            class="octicon octicon-repo-forked mr-2"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                            ></path>
+                        </svg>
+
+                        Forks
+                    </a>
+                    <a href="#">4,391</a>
+                </div>
             </div>
-            <div>
-                <a href="#" class="section-present__buttons-item">
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                        data-view-component="true" class="octicon octicon-star mr-2">
-                        <path fill-rule="evenodd"
-                            d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
-                        </path>
-                    </svg>
-
-                    Stars
-                </a>
-                <a href="#">21,038</a>
+        </section>
+        <section class="section-features">
+            <div class="section-features__wrapper container">
+                <h2 class="section-features__title">
+                    &lt;Here is what you get&gt;
+                </h2>
+                <div class="section-features__content-wrapper">
+                    <div class="features">
+                        <img src="./dist/images/features/icon1.png" alt="" />
+                        <div>
+                            <h3 class="features__title">
+                                Creatred to Make The Web Better
+                            </h3>
+                            <p class="features__subtitle">
+                                Aenean cursus imperdiet nisl id fermentum.
+                                Aliquam pharetra dui laoreet vulputate
+                                dignissim. Sed id metus id quam auctor molestie
+                                eget ut augue.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img src="./dist/images/features/icon2.png" alt="" />
+                        <div>
+                            <h3 class="features__title">
+                                Incredibly Powerful Tool
+                            </h3>
+                            <p class="features__subtitle">
+                                Maecenas eu dictum felis, a dignissim nibh.
+                                Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi
+                                gravida luctus. Aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img src="./dist/images/features/icon3.png" alt="" />
+                        <div>
+                            <h3 class="features__title">Experimental Stuff</h3>
+                            <p class="features__subtitle">
+                                Maecenas eu dictum felis, a dignissim nibh.
+                                Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi
+                                gravida luctus. Aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img src="./dist/images/features/icon4.png" alt="" />
+                        <div>
+                            <h3 class="features__title">
+                                Creatred to Make The Web Better
+                            </h3>
+                            <p class="features__subtitle">
+                                Maecenas eu dictum felis, a dignissim nibh.
+                                Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi
+                                gravida luctus. Aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <picture class="section-features__image">
+                    <source
+                        media="(min-width: 481px)"
+                        srcset="./dist/images/features/editor-desk.png"
+                    />
+                    <img
+                        src="./dist/images/features/editor-mobile.png"
+                        alt=""
+                    />
+                </picture>
             </div>
-            <div>
-                <a href="#" class="section-present__buttons-item">
-                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
-                        data-view-component="true" class="octicon octicon-repo-forked mr-2">
-                        <path fill-rule="evenodd"
-                            d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z">
-                        </path>
-                    </svg>
+        </section>
+        <section class="section-comments">
+            <div class="section-comments__container container">
+                <h2 class="section-comments__title">
+                    People Are Talking About Fork
+                </h2>
+                <div class="section-comments__content">
+                    <div class="section-comments__content-post">
+                        <img src="./dist/images/comments/logo1.png" />
+                        <p>
+                            Sed vestibulum scelerisque urna, eu finibus leo
+                            facilisis sit amet. Proin id dignissim magna. Sed
+                            varius urna et pulvinar venenatis.
+                        </p>
+                    </div>
 
-                    Forks
-                </a>
-                <a href="#">4,391</a>
-            </div>
-        </div>
-
-    </section>
-    <section class="section-features">
-        <div class="section-features__wrapper">
-            <h2 class="section-features__title">
-                &lt;Here is what you get&gt;
-            </h2>
-            <div class="section-features__content-wrapper">
-                <div class="features">
-                    <img src="./dist/images/features/icon1.png" alt="" />
-                    <div>
-                        <h3 class="features__title">
-                            Creatred to Make The Web Better
-                        </h3>
-                        <p class="features__subtitle">
-                            Aenean cursus imperdiet nisl id fermentum.
-                            Aliquam pharetra dui laoreet vulputate
-                            dignissim. Sed id metus id quam auctor molestie
-                            eget ut augue.
+                    <div class="section-comments__content-post">
+                        <img src="./dist/images/comments/logo2.png" />
+                        <p>
+                            Donec euismod dolor ut ultricies consequat. Vivamus
+                            urna ipsum, rhoncus molestie neque ac, mollis
+                            eleifend nibh.
+                        </p>
+                    </div>
+                    <div class="section-comments__content-post">
+                        <img src="./dist/images/comments/logo3.png" />
+                        <p>
+                            In efficitur in velit et tempus. Duis nec odio
+                            dapibus, suscipit erat fringilla, imperdiet nibh.
+                            Morbi tempus auctor felis ac vehicula.
+                        </p>
+                    </div>
+                    <div class="section-comments__content-post">
+                        <img src="./dist/images/comments/logo4.png" />
+                        <p>
+                            Sed vestibulum scelerisque urna, eu finibus leo
+                            facilisis sit amet. Proin id dignissim magna. Sed
+                            varius urna et pulvinar venenatis.
+                        </p>
+                    </div>
+                    <div class="section-comments__content-post">
+                        <img src="./dist/images/comments/logo5.png" />
+                        <p>
+                            Praesent ut eros tristique, malesuada lectus vel,
+                            lobortis massa. Nulla faucibus lorem id arcu
+                            consequat faucibus.
+                        </p>
+                    </div>
+                    <div class="section-comments__content-post">
+                        <img src="./dist/images/comments/logo6.png" />
+                        <p>
+                            Fusce pharetra erat id odio blandit, nec pharetra
+                            eros venenatis. Pellentesque porttitor cursus massa
+                            et vestibulum.
                         </p>
                     </div>
                 </div>
-                <div class="features">
-                    <img src="./dist/images/features/icon2.png" alt="" />
-                    <div>
-                        <h3 class="features__title">
-                            Incredibly Powerful Tool
-                        </h3>
-                        <p class="features__subtitle">
-                            Maecenas eu dictum felis, a dignissim nibh.
-                            Mauris rhoncus felis odio, ut volutpat massa
-                            placerat ac. Curabitur dapibus iaculis mi
-                            gravida luctus. Aliquam erat volutpat.
-                        </p>
+                <p class="section-comments-details">
+                    Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi
+                    mauris, facilisis vitae aliquet id, imperdiet quis nibh.
+                    Donec eget elit eu libero tincidunt consequat nec elementum
+                    orci. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus.
+                </p>
+            </div>
+        </section>
+        <section class="section-prices container">
+            <div class="section-prices__wrapper">
+                <h2 class="section-prices__title">Fork Subscription Pricing</h2>
+                <div class="section-prices__content-wrapper">
+                    <div class="prices">
+                        <h3 class="prices__title">Students</h3>
+                        <div class="prices__description">
+                            <p class="prices__price">$29</p>
+                            <p class="prices__text">per month</p>
+                            <p class="prices__text">Personal License</p>
+                            <button class="prices__purchase-btn">
+                                purchase
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="features">
-                    <img src="./dist/images/features/icon3.png" alt="" />
-                    <div>
-                        <h3 class="features__title">Experimental Stuff</h3>
-                        <p class="features__subtitle">
-                            Maecenas eu dictum felis, a dignissim nibh.
-                            Mauris rhoncus felis odio, ut volutpat massa
-                            placerat ac. Curabitur dapibus iaculis mi
-                            gravida luctus. Aliquam erat volutpat.
-                        </p>
+
+                    <div class="prices">
+                        <h3 class="prices__title">Professional</h3>
+                        <div class="prices__description">
+                            <p class="prices__price">$59</p>
+                            <p class="prices__text">per month</p>
+                            <p class="prices__text">
+                                Professional License Email Support
+                            </p>
+                            <button class="prices__purchase-btn">
+                                purchase
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="features">
-                    <img src="./dist/images/features/icon4.png" alt="" />
-                    <div>
-                        <h3 class="features__title">
-                            Creatred to Make The Web Better
-                        </h3>
-                        <p class="features__subtitle">
-                            Maecenas eu dictum felis, a dignissim nibh.
-                            Mauris rhoncus felis odio, ut volutpat massa
-                            placerat ac. Curabitur dapibus iaculis mi
-                            gravida luctus. Aliquam erat volutpat.
-                        </p>
+
+                    <div class="prices">
+                        <h3 class="prices__title">Agency</h3>
+                        <div class="prices__description">
+                            <p class="prices__price">$99</p>
+                            <p class="prices__text">per month</p>
+                            <p class="prices__text">
+                                1-12 Team Members Phone Support
+                            </p>
+                            <button class="prices__purchase-btn">
+                                purchase
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="prices">
+                        <h3 class="prices__title">Enterprise</h3>
+                        <div class="prices__description">
+                            <p class="prices__price">$159</p>
+                            <p class="prices__text">per month</p>
+                            <p class="prices__text">
+                                Unlimited Team Members 24/ 7 Phone Support
+                            </p>
+                            <button class="prices__purchase-btn">
+                                purchase
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <picture>
-                <source
-                    media="(min-width: 768px)"
-                    srcset="./dist/images/features/editor-desk.png"
-                />
-                <img
-                    src="./dist/images/features/editor-mobile.png"
-                    alt=""
-                />
-            </picture>
-        </div>
-    </section>
-    <section class="section-comments">
-        <div class="section-comments__container">
-            <h2 class="section-comments__title">People Are Talking About Fork</h2>
-            <div class="section-comments__content">
-                <div class="section-comments__content-post">
-                    <img src="./dist/images/comments/logo1.png">
-                    <p>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit
-                        amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
-                </div>
+        </section>
 
-                <div class="section-comments__content-post">
-                    <img src="./dist/images/comments/logo2.png">
-                    <p>Donec euismod dolor ut ultricies consequat. Vivamus urna
-                        ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
-                </div>
-                <div class="section-comments__content-post">
-                    <img src="./dist/images/comments/logo3.png">
-                    <p>In efficitur in velit et tempus. Duis nec odio dapibus,
-                        suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
-                </div>
-                <div class="section-comments__content-post">
-                    <img src="./dist/images/comments/logo4.png">
-                    <p>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit
-                        amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-                </div>
-                <div class="section-comments__content-post">
-                    <img src="./dist/images/comments/logo5.png">
-                    <p>Praesent ut eros tristique, malesuada lectus vel, lobortis
-                        massa. Nulla faucibus lorem id arcu consequat faucibus. </p>
-                </div>
-                <div class="section-comments__content-post">
-                    <img src="./dist/images/comments/logo6.png">
-                    <p>Fusce pharetra erat id odio blandit, nec pharetra eros
-                        venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
-                </div>
-
-            </div>
-            <p class="section-comments-details">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris,
-                facilisis
-                vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-        </div>
-    </section>
-    <section class="section-prices">
-        <div class="section-prices__wrapper">
-            <h2 class="section-prices__title">Fork Subscription Pricing</h2>
-            <div class="section-prices__content-wrapper">
-                <div class="prices">
-                    <h3 class="prices__title">Students</h3>
-                    <div class="prices__description">
-                        <p class="prices__price">$29</p>
-                        <p class="prices__text">per month</p>
-                        <p class="prices__text">Personal License</p>
-                        <button class="prices__purchase-btn">
-                            purchase
-                        </button>
-                    </div>
-                </div>
-
-                <div class="prices">
-                    <h3 class="prices__title">Professional</h3>
-                    <div class="prices__description">
-                        <p class="prices__price">$59</p>
-                        <p class="prices__text">per month</p>
-                        <p class="prices__text">
-                            Professional License Email Support
-                        </p>
-                        <button class="prices__purchase-btn">
-                            purchase
-                        </button>
-                    </div>
-                </div>
-
-                <div class="prices">
-                    <h3 class="prices__title">Agency</h3>
-                    <div class="prices__description">
-                        <p class="prices__price">$99</p>
-                        <p class="prices__text">per month</p>
-                        <p class="prices__text">
-                            1-12 Team Members Phone Support
-                        </p>
-                        <button class="prices__purchase-btn">
-                            purchase
-                        </button>
-                    </div>
-                </div>
-
-                <div class="prices">
-                    <h3 class="prices__title">Enterprise</h3>
-                    <div class="prices__description">
-                        <p class="prices__price">$159</p>
-                        <p class="prices__text">per month</p>
-                        <p class="prices__text">
-                            Unlimited Team Members 24/ 7 Phone Support
-                        </p>
-                        <button class="prices__purchase-btn">
-                            purchase
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <script src="./dist/scripts.min.js">	</script>
-</body>
-
+        <script src="./dist/scripts.min.js"></script>
+    </body>
 </html>
