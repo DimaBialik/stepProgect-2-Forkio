@@ -4,3 +4,26 @@
 @import "_sectionFeatures.scss";
 @import "_sectionComments.scss";
 @import "_sectionPrices.scss";
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat";
+}
+p {
+    font-family: "Lato";
+}
+.container {
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
