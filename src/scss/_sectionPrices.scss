@@ -4,28 +4,24 @@
     min-width: 320px;
     &__wrapper {
         text-align: center;
-        color: #ffffff;
+        color: $backgroundWhite;
         padding: 14px 0 18px;
     }
     &__content-wrapper {
-        display: flex;
+        @include flex-center;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         row-gap: 18px;
     }
     &__title {
+        @include fontSize(28px, 42px);
         font-weight: bold;
-        font-size: 28px;
-        line-height: 42px;
         margin-bottom: 32px;
     }
     .prices {
         width: 257px;
         background: rgba(255, 255, 255, 0.11);
         &__title {
-            font-size: 24px;
-            line-height: 24px;
+            @include fontSize(24px, 24px);
             text-transform: uppercase;
             background: rgba(255, 255, 255, 0.06);
             padding: 36px 0;
@@ -34,9 +30,8 @@
             padding: 30px 0 36px;
         }
         &__price {
+            @include fontSize(60px, 62px);
             font-family: "Montserrat";
-            font-size: 60px;
-            line-height: 62px;
             text-transform: uppercase;
             margin-bottom: 20px;
             span {
@@ -46,26 +41,26 @@
         &__text {
             font-family: "Montserrat";
             &-1 {
-                font-size: 14px;
-                line-height: 16px;
+                @include fontSize(14px, 16px);
                 text-transform: uppercase;
                 &:after {
                     content: "";
                     display: block;
-                    border-bottom: 5px solid #8d81ac;
+                    border-bottom: 5px solid $textColorPurple;
                     width: 20%;
                     margin: 38px auto 30px auto;
                 }
             }
             &-2 {
-                font-size: 16px;
-                line-height: 28px;
+                @include fontSize(16px, 28px);
+                max-width: 200px;
+                margin-right: auto;
+                margin-left: auto;
                 margin-bottom: 37px;
             }
         }
         &__purchase-btn {
-            font-size: 15px;
-            line-height: 15px;
+            @include fontSize(15px, 15px);
             text-transform: uppercase;
             border: none;
             border-radius: 30px;
@@ -85,8 +80,7 @@
                     padding: 14px 0 47px;
                 }
                 &__price {
-                    font-size: 82px;
-                    line-height: 84px;
+                    @include fontSize(82px, 84px);
                     margin-bottom: 16px;
                 }
                 &__text {
@@ -96,6 +90,8 @@
                         }
                     }
                     &-2 {
+                        margin-right: auto;
+                        margin-left: auto;
                         margin-bottom: 83px;
                     }
                 }
@@ -109,8 +105,7 @@
             padding: 88px 0 94px;
         }
         &__title {
-            font-size: 42px;
-            line-height: 44px;
+            @include fontSize(42px, 44px);
             margin-bottom: 39px;
         }
         &__content-wrapper {
@@ -145,8 +140,7 @@
             padding: 112px 0 94px;
         }
         &__title {
-            font-size: 48px;
-            line-height: 50px;
+            @include fontSize(48px, 50px);
             margin-bottom: 61px;
         }
         &__content-wrapper {
