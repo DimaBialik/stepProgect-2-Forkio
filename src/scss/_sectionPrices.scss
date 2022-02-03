@@ -1,0 +1,168 @@
+.section-prices {
+    background: url(./images/prices/bg-prices.png) no-repeat center;
+    background-size: cover;
+    min-width: 320px;
+    &__wrapper {
+        text-align: center;
+        color: #ffffff;
+        padding: 14px 0 18px;
+    }
+    &__content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 18px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 42px;
+        margin-bottom: 32px;
+    }
+    .prices {
+        width: 257px;
+        background: rgba(255, 255, 255, 0.11);
+        &__title {
+            font-size: 24px;
+            line-height: 24px;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 36px 0;
+        }
+        &__description {
+            padding: 30px 0 36px;
+        }
+        &__price {
+            font-family: "Montserrat";
+            font-size: 60px;
+            line-height: 62px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            span {
+                font-weight: 700;
+            }
+        }
+        &__text {
+            font-family: "Montserrat";
+            &-1 {
+                font-size: 14px;
+                line-height: 16px;
+                text-transform: uppercase;
+                &:after {
+                    content: "";
+                    display: block;
+                    border-bottom: 5px solid #8d81ac;
+                    width: 20%;
+                    margin: 38px auto 30px auto;
+                }
+            }
+            &-2 {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 37px;
+            }
+        }
+        &__purchase-btn {
+            font-size: 15px;
+            line-height: 15px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px 38px;
+        }
+        &:nth-child(3) {
+            width: 299px;
+            background: rgba(70, 48, 72, 0.84);
+            .prices {
+                &__title {
+                    background: rgba(0, 0, 0, 0.06);
+                    padding: 43px 0;
+                }
+                &__description {
+                    padding: 14px 0 47px;
+                }
+                &__price {
+                    font-size: 82px;
+                    line-height: 84px;
+                    margin-bottom: 16px;
+                }
+                &__text {
+                    &-1 {
+                        &::after {
+                            margin: 46px auto 40px auto;
+                        }
+                    }
+                    &-2 {
+                        margin-bottom: 83px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 481px) {
+    .section-prices {
+        &__wrapper {
+            padding: 88px 0 94px;
+        }
+        &__title {
+            font-size: 42px;
+            line-height: 44px;
+            margin-bottom: 39px;
+        }
+        &__content-wrapper {
+            row-gap: 30px;
+            column-gap: 25px;
+        }
+        .prices {
+            &:first-child {
+                .prices {
+                    &__text {
+                        &-2 {
+                            margin-bottom: 68px;
+                        }
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .prices {
+                    &__text {
+                        &-2 {
+                            margin-bottom: 83px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 993px) {
+    .section-prices {
+        &__wrapper {
+            padding: 112px 0 94px;
+        }
+        &__title {
+            font-size: 48px;
+            line-height: 50px;
+            margin-bottom: 61px;
+        }
+        &__content-wrapper {
+            row-gap: 30px;
+            column-gap: 15px;
+        }
+        .prices {
+            &:first-child {
+                .prices {
+                    &__text {
+                        &-2 {
+                            margin-bottom: 62px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,101 +1,97 @@
 @import "_constants.scss";
 @import "_mixins.scss";
 .section-comments {
-  background-image: url(./images/comments/bg-comments.png);
-  background-position-x: center;
-  background-size: cover;
-  min-width: 320px;
-  
- 
-  &__title {
-    padding: 53px 0;
-    font-style: normal;
-    font-weight: bold;
-    color: $textColorWhite;
-    @include fontSize(36px,48px);
-    align-items: center;
-    text-align: center;
-  }
+    background-image: url(./images/comments/bg-comments.png);
+    background-position-x: center;
+    background-size: cover;
+    min-width: 320px;
 
-  &__content { 
-    &-post {
-    text-align: center;
-    
-      p {
-        padding: 33px 0 45px 0;
-        font-family: "Lato", sans-serif;
-        font-style: italic;
+    &__title {
+        padding: 53px 0;
+        font-style: normal;
         font-weight: bold;
         color: $textColorWhite;
-        @include fontSize(16px,24px);
-        
+        @include fontSize(36px, 48px);
         align-items: center;
         text-align: center;
-        
-      }
-    }
-  }
-  
-
-  &-details {
-    color: #A291A5;
-    @include fontSize(14px,21px);
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    &:after {
-      content: "";
-      display: block;
-      height: 1px;
-      background:  #645766;;
-      margin-top: 20px;
-    }
-  }
-}
-
-@media  (min-width: 481px) {
-  .section-comments {
-    &__title {
-      padding: 83px 0;
-      @include fontSize(42px,44px);
-      
     }
 
     &__content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-content: center;
-      &-post {
-        width: 40%;
-        align-self: center;
-        p{ 
-          padding: 33px 0 58px 0;
+        &-post {
+            text-align: center;
+            p {
+                padding: 33px 0 45px 0;
+                font-family: "Lato", sans-serif;
+                font-style: italic;
+                font-weight: bold;
+                color: $textColorWhite;
+                @include fontSize(16px, 24px);
+
+                align-items: center;
+                text-align: center;
+            }
         }
-      }
     }
 
-   
-  }
+    &-details {
+        color: #a291a5;
+        @include fontSize(14px, 21px);
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        &:after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: #645766;
+            margin: 20px auto 0 auto;
+        }
+    }
 }
 
-@media  (min-width: 992px) {
-  .section-comments {
-    &__title {
-      padding: 108px 0 81px;
-      @include fontSize(48px,50px);
-     
-    }
-
-    &__content { 
-      &-post {
-        width: 30%;
-        p{ 
-          padding: 33px 0 116px 0;
+@media (min-width: 481px) {
+    .section-comments {
+        &__title {
+            padding: 83px 0;
+            @include fontSize(42px, 44px);
         }
-      }
+
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+            &-post {
+                width: 40%;
+                align-self: center;
+                p {
+                    padding: 33px 0 58px 0;
+                }
+            }
+        }
+        &-details {
+            &::after {
+                width: 90%;
+            }
+        }
     }
-    
-  }
+}
+
+@media (min-width: 992px) {
+    .section-comments {
+        &__title {
+            padding: 108px 0 81px;
+            @include fontSize(48px, 50px);
+        }
+
+        &__content {
+            &-post {
+                width: 30%;
+                p {
+                    padding: 33px 0 116px 0;
+                }
+            }
+        }
+    }
 }
