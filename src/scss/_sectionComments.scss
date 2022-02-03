@@ -5,44 +5,34 @@
   background-position-x: center;
   background-size: cover;
   min-width: 320px;
-  
- 
-  &__title {
+    &__title {
+    @include fontSize(36px,48px);
     padding: 53px 0;
-    font-style: normal;
     font-weight: bold;
     color: $textColorWhite;
-    @include fontSize(36px,48px);
-    align-items: center;
     text-align: center;
   }
-
   &__content { 
     &-post {
     text-align: center;
     
       p {
+        @include fontSize(16px,24px);
         padding: 33px 0 45px 0;
-        font-family: "Lato", sans-serif;
         font-style: italic;
         font-weight: bold;
         color: $textColorWhite;
-        @include fontSize(16px,24px);
-        
-        align-items: center;
         text-align: center;
         
       }
     }
   }
-  
-
   &-details {
-    color: #A291A5;
     @include fontSize(14px,21px);
+    margin: 0 auto;
     width: 90%;
     max-width: 900px;
-    margin: 0 auto;
+    color: #A291A5;
     text-align: center;
     &:after {
       content: "";
@@ -53,15 +43,12 @@
     }
   }
 }
-
 @media  (min-width: 481px) {
   .section-comments {
     &__title {
-      padding: 83px 0;
       @include fontSize(42px,44px);
-      
+      padding: 83px 0;
     }
-
     &__content {
       display: flex;
       flex-wrap: wrap;
@@ -69,25 +56,26 @@
       align-content: center;
       &-post {
         width: 40%;
-        align-self: center;
+        align-self: baseline;
+        img { 
+         max-width: 100%;
+        }
         p{ 
           padding: 33px 0 58px 0;
         }
       }
     }
-
-   
   }
 }
 
 @media  (min-width: 992px) {
   .section-comments {
     &__title {
-      padding: 108px 0 81px;
       @include fontSize(48px,50px);
+      padding: 108px 0 81px;
+      
      
     }
-
     &__content { 
       &-post {
         width: 30%;
@@ -96,6 +84,5 @@
         }
       }
     }
-    
   }
 }

@@ -1,25 +1,20 @@
 .section-present {
-
-  
-
   h2 {
+    @include fontSize(26px,28px);
     margin: 0 auto;
     width: 273px;
     padding-top: 130px;
     font-weight: bold;
-    @include fontSize(26px,28px);
-     
     text-align: center;
     text-transform: uppercase;
     color: #635c73;
   }
   p {
+    @include fontSize(14px,20px);
     transition: 0.3s;
-   margin: 0 auto;
+    margin: 0 auto;
     width: 276px;
     padding-top: 27px;
-    @include fontSize(14px,20px);
-  
     text-align: center;
     color: #323232;
   }
@@ -27,37 +22,34 @@
     margin: 0 auto;
     width: 276px;
     padding-top: 36px;
-    justify-content: space-around;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
     div {
       display: flex;
       border: 1px solid rgba(27, 31, 35, 0.2);
-      align-items: center;
       border-radius: 5px;
       &:last-child {
         margin-top: 20px;
       }
      
       a:last-child {
+        @include fontSize(14px,20px);
         padding: 3px 6px 3px 6px;
         color: #24292e;
-        font-family: "Lato", sans-serif;
-        @include fontSize(14px,20px);
-        align-items: center;
         text-align: center;
       }
     }
     &-item{
+      @include fontSize(14px,20px);
       text-decoration: none;
       display: flex;
-      padding: 3px 6px 3px 6px;
+      padding: 3px 8px 3px 8px;
       border-right: 1px solid rgba(27, 31, 35, 0.2);
       color: #24292e;
       background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
-      font-family: "Lato", sans-serif;
-      @include fontSize(14px,20px);
       align-items: center;
       text-align: center;
       svg {
@@ -70,16 +62,14 @@
 @media (min-width: 481px) {
   .section-present {
     h2 {
+      @include fontSize(42px,42px);
       width: 90%;
       padding-top: 158px;
-      @include fontSize(42px,42px);
-     
     }
     p {
+      @include fontSize(21px,32px);
       width: 90%;
       padding-top: 33px;
-      @include fontSize(21px,32px);
-     
     }
     &__buttons {
       width: 450px;
@@ -95,10 +85,9 @@
 @media (min-width: 992px) {
   .section-present {
     h1 {
+      @include fontSize(54px,54px);
       width: 758.89px;
       padding-top: 158px;
-      @include fontSize(54px,54px);
-     
     }
     p {
       width: 800px;
