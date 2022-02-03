@@ -11,6 +11,8 @@
     font-weight: bold;
     color: $textColorWhite;
     text-align: center;
+    margin: 0 auto;
+     width: 80;
   }
   &__content { 
     &-post {
@@ -23,7 +25,8 @@
         font-weight: bold;
         color: $textColorWhite;
         text-align: center;
-        
+        margin: 0 auto;
+        width: 80%;
       }
     }
   }
@@ -55,7 +58,7 @@
       justify-content: space-around;
       align-content: center;
       &-post {
-        width: 40%;
+        width: 45%;
         align-self: baseline;
         img { 
          max-width: 100%;
