@@ -33,10 +33,10 @@
               }
       }
       button {
+      @include fontSize(15px,15px);  
       width: 119px;
       height: 37px;
-      font-weight: bold;
-      @include fontSize(15px,15px);
+      font-weight: bold;     
       color: $textColorWhite;
       background: $backgroundPurple;
       border: none;
@@ -115,15 +115,14 @@
             li {
               display: flex;
               height: 88px;
-
               align-items: center;
               border-bottom: 2px solid gray;
             }
 
             a {
+              @include fontSize(26px,26px);
               display: flex;
               align-items: center;
-              @include fontSize(26px,26px);
               color: $textColorWhite;
               padding-left: 35px;
               &:active,
@@ -144,29 +143,25 @@
     flex-direction: column;
     align-items: center;
     h1 {
+      @include fontSize(48px,48px);
       transition: 0.3s;
       padding-top: 50px;
       font-weight: bold;
-      @include fontSize(48px,48px);
       color: $textColorWhite;
     }
     p {
+      @include fontSize(18px,24px);
       transition: 0.3s;
       width: 80%;
       padding-top: 18px;
-     
-      @include fontSize(18px,24px);
-      align-items: center;
       text-align: center;
       color: $textColorPurple;
     }
     h3 {
+      @include fontSize (14px,14px);
       transition: 0.3s;
       padding-top: 14px;
-    
-      @include fontSize (14px,14px);
       color: $textColorGray;
-      align-items: center;
       text-align: center;
       text-transform: uppercase;
       
@@ -178,15 +173,13 @@
     align-items: center;
     padding-top: 400px;
     button {
+      @include fontSize(18px,20px); 
       cursor: pointer;
       width: 290px;
       height: 45px;
-      @include fontSize(18px,20px); 
       font-weight: bold;
       color: $textColorWhite;
       background: $backgroundPurple;
-      align-items: center;
-      text-align: center;
       border: none;
       border-radius: 40px;
       &:hover {
@@ -196,11 +189,8 @@
       }
     }
     h3 {
-      padding-top: 12.5px;
-      
       @include fontSize(14px,14px);
-      align-items: center;
-      text-align: center;
+      padding-top: 12.5px;   
       color: $textColorGray;
     }
   }
@@ -254,7 +244,7 @@
           ul {
             display: flex;
             justify-content: space-around;
-            width: 490px;
+            width: 481px;
             li {
               border: none;
               a {
@@ -276,13 +266,15 @@
         @include fontSize(72px,72px);
       }
       p {
+        @include fontSize(24px,24px);
         padding-top: 19px;
         width: 80%;
-        @include fontSize(24px,24px);
+        
       }
       h3 {
-        padding-top: 19px;
         @include fontSize(14px,14px);
+        padding-top: 19px;
+        
       }
     }
     &__button {
@@ -292,11 +284,11 @@
       left: calc(100% / 2 - 180px);
       display: flex;
       flex-direction: column;
-      align-items: center;
-      button {
+        button {
+        @include fontSize(21px,23px);
         width: 390px;
         height: 62px;
-        @include fontSize(21px,23px);
+        
       }
       h3 {
         padding-top: 42px;
