@@ -2,7 +2,7 @@
 @import "_mixins.scss";
 .section-comments {
     background-image: url(./images/comments/bg-comments.png);
-    background-position-x: center;
+    background-position: center center;
     background-size: cover;
     min-width: 320px;
     &__title {
@@ -33,14 +33,15 @@
     &-details {
         @include fontSize(14px, 21px);
         margin: 0 auto;
-        width: 90%;
+        width: 85%;
         max-width: 900px;
         color: #a291a5;
         text-align: center;
         &:after {
+            
             content: "";
             display: block;
-            height: 1px;
+            height: 2px;
             background: #645766;
             margin-top: 20px;
         }
