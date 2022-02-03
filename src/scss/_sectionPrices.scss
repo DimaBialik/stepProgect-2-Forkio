@@ -53,6 +53,9 @@
             }
             &-2 {
                 @include fontSize(16px, 28px);
+                max-width: 200px;
+                margin-right: auto;
+                margin-left: auto;
                 margin-bottom: 37px;
             }
         }
@@ -87,6 +90,8 @@
                         }
                     }
                     &-2 {
+                        margin-right: auto;
+                        margin-left: auto;
                         margin-bottom: 83px;
                     }
                 }
