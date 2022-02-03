@@ -21,7 +21,7 @@ menuBtn.addEventListener('click', e => {
 
 
 body.onresize = e => {
-    if (e.target.innerWidth >= 500) {
+    if (e.target.innerWidth >= 480) {
         menuBtn.classList.remove('open');
         menuBurger.classList.remove('open');
         menuOpen = false;
